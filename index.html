@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency exchange</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arapey&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Currency exchange</h1>
+        <div class="flex-box">
+            <div class="bitcoin-price">What is Bitcoin price today?</div>
+            <input class="input-bitcoin" type="number" id="txt-price">
+        </div>
+
+        <div class="flex-box">
+            <div class="user-money">How much $ do you have?</div>
+            <input class="input-usermoney" type="number" id="txt-user-money">
+        </div>
+
+        <div class="flex-box">
+            <div class="result">You can buy</div>
+            <input class="input-result" type="text" id="txt-result" readonly >
+        </div>
+
+        <div class="flex-btn">
+            <button class="btn" onclick="calculate()">Calculate</button>
+            <button class="btn" onclick="reset()">Reset</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
